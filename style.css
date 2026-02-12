@@ -11,6 +11,8 @@ body{
   line-height: 1.5;
 }
 
+/* header */
+
 .header{
   background: white;
   padding: 1.5rem 2rem;
@@ -64,3 +66,131 @@ body{
   align-items: center;
   gap: 0.5rem;
 }
+
+/* main content */
+
+.main-content{
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dashboard-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 350px;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card{
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-title{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.card-menu{
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.amount{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.income-amount{
+  color: #1e293b;
+}
+
+.expense-amount{
+  color: #1e293b;
+}
+
+.change{
+  font-size: 0.875rem;
+  color: #10b981;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.my-card{
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-chip{
+  width: 32px;
+  height: 24px;
+  background: #fbbf24;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.card-chip::after{
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: #92400e;
+  border-radius: 2px;
+}
+
+.card-number{
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.card-holder{
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.card-logo{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: -8px;
+}
+
+.card-logo-circle{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.logo-red{
+  background: #ef4444;
+}
+
+.logo-orange{
+  background: #f59e0b;
+  margin-left: -8px;
+}
+
