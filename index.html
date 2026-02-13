@@ -123,37 +123,103 @@
                   font-size: 0.75rem;
                 "
               ></div>
-							<div class="chart-bar-income" style="height: 120px;"></div>
-							<div class="chart-bar-expense" style="height: 80px;"></div>
+              <div class="chart-bar-income" style="height: 120px"></div>
+              <div class="chart-bar-expense" style="height: 80px"></div>
             </div>
-						<div class="chart-bar" style="height: 150px;"></div>
-						<div class="chart-bar" style="height: 90px;"></div>
-						<div class="chart-bar" style="height: 110px;"></div>
-						<div class="chart-bar" style="height: 130px;"></div>
-						<div class="chart-bar" style="height: 100px;"></div>
-						<div class="chart-bar" style="height: 85px;"></div>
-						<div class="chart-bar" style="height: 160px;"></div>
-						<div class="chart-bar" style="height: 95px;"></div>
+            <div class="chart-bar" style="height: 150px"></div>
+            <div class="chart-bar" style="height: 90px"></div>
+            <div class="chart-bar" style="height: 110px"></div>
+            <div class="chart-bar" style="height: 130px"></div>
+            <div class="chart-bar" style="height: 100px"></div>
+            <div class="chart-bar" style="height: 85px"></div>
+            <div class="chart-bar" style="height: 160px"></div>
+            <div class="chart-bar" style="height: 95px"></div>
           </div>
 
           <div class="chart-labels">
-						<span>Jan</span>
-						<span>Feb</span>
-						<span>Mar</span>
-						<span>Apr</span>
-						<span>May</span>
-						<span>Jun</span>
-						<span>Jul</span>
-						<span>Aug</span>
-						<span>Sep</span>
-						<span>Oct</span>
-						<span>Nov</span>
-						<span>Dec</span>
-					</div>
+            <span>Jan</span>
+            <span>Feb</span>
+            <span>Mar</span>
+            <span>Apr</span>
+            <span>May</span>
+            <span>Jun</span>
+            <span>Jul</span>
+            <span>Aug</span>
+            <span>Sep</span>
+            <span>Oct</span>
+            <span>Nov</span>
+            <span>Dec</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">All Expenses</h3>
+            <button class="card-menu">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+          <div style="font-size: 0.75rem; color: #6b7280; margin-bottom: 1rem">
+            Spending breakdown by category
+          </div>
+          <div class="expenses-breakdown">
+            <div class="total-expenses">$24,645.00</div>
+
+            <div class="period-tabs">
+              <div class="period-tab">Daily</div>
+              <div class="period-tab">Weekly</div>
+              <div class="period-tab active">Monthly</div>
+            </div>
+
+            <div class="period-amounts">
+              <span>Daily</span>
+              <span>Weekly</span>
+              <span>Monthly</span>
+            </div>
+
+            <div class="period-values">
+              <span>$1,345</span>
+              <span>$7,136</span>
+              <span>$14,927</span>
+            </div>
+
+            <div class="color-bar"></div>
+
+            <ul class="expense-categories">
+              <li class="expense-category">
+                <div class="category-info">
+                  <div class="category-dot dot-food"></div>
+                  <span>Food & Health</span>
+                </div>
+                <span>863</span>
+              </li>
+              <li class="expense-category">
+                <div class="category-info">
+                  <div class="category-dot dot-entertainment"></div>
+                  <span>Entertainments</span>
+                </div>
+                <span>248</span>
+              </li>
+              <li class="expense-category">
+                <div class="category-info">
+                  <div class="category-dot dot-entertainment"></div>
+                  <span>Shopping</span>
+                </div>
+                <span>1835</span>
+              </li>
+              <li class="expense-category">
+                <div class="category-info">
+                  <div class="category-dot dot-entertainment"></div>
+                  <span>Investment</span>
+                </div>
+                <span>1835</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div class="card transactions -section"></div>
+      <div class="card transactions-section"></div>
     </div>
 
     <script src="script.js"></script>
