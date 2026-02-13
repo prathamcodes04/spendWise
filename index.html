@@ -13,7 +13,7 @@
   <body>
     <!-- header -->
     <div class="header">
-			<h1>Good Morning, Pratham!</h1>
+      <h1>Good Morning, Pratham!</h1>
       <div class="header-controls">
         <div class="dropdown">Daily <i class="fas fa-chevron-down"></i></div>
         <div class="date-picker">
@@ -27,81 +27,134 @@
       </div>
     </div>
 
-		<!-- main content -->
-		<div class="main-content">
-			<div class="dashboard-grid">
-				<div class="card">
-					<div class="card-header">
-						<h3 class="cart-title">Monthly Income</h3>
-						<button class="card-menu">
-							<i class="fas fa-ellipsis"></i>
-						</button>
-						<div class="amount income-amount">$2,645.00</div>
-						<div class="change">
-							<i class="fas fa-arrow-up"></i>
-							12% vs Last month
-						</div>
+    <!-- main content -->
+    <div class="main-content">
+      <div class="dashboard-grid">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Monthly Income</h3>
+            <button class="card-menu">
+              <i class="fas fa-ellipsis"></i>
+            </button>
+          </div>
+          <div class="amount income-amount">$2,645.00</div>
+          <div class="change">
+            <i class="fas fa-arrow-up"></i>
+            12% vs Last month
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Monthly Expenses</h3>
+            <button class="card-menu">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+          <div class="amount expense-amount">$1,895.00</div>
+          <div class="change">
+            <i class="fas fa-arrow-up"></i>
+            12% vs Last month
+          </div>
+        </div>
+
+        <div class="card my-card">
+          <div class="card-header">
+            <h3 class="card-title">My Card</h3>
+            <button class="card-menu" style="color: rgba(255, 255, 255, 0.8)">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+          <div style="font-size: 0.75rem; opacity: 0.8; margin-bottom: 1rem">
+            Linked to your primary wallet
+          </div>
+
+          <div class="card-chip"></div>
+          <div class="card-number">5435 2735 0037 0015</div>
+          <div class="card-holder">Pratham Gupta</div>
+
+          <div class="card-logo">
+            <div class="card-logo-circle logo-red"></div>
+            <div class="card-logo-circle logo-orange"></div>
+          </div>
+
+          <div class="spending-section">
+            <div
+              style="margin-bottom: 0.5rem; font-size: 0.875rem; opacity: 0.9"
+            >
+              Spending Limit
+            </div>
+            <div class="spending-limit">$4,645.00</div>
+            <div class="spending-used">used from $12,645.00</div>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-section">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Overview</h3>
+            <div style="display: flex; gap: 1rem">
+              <div class="dropdown">Yearly <i class="fas fa-chevron"></i></div>
+              <button class="filter-btn">
+                <i class="fas fa-filter"></i>
+                Filter
+              </button>
+            </div>
+          </div>
+
+          <div class="chart-container">
+            <div class="chart-bar" style="height: 120px"></div>
+            <div class="chart-bar" style="height: 80px"></div>
+            <div class="chart-bar active" style="height: 200px">
+              <div
+                style="
+                  position: absolute;
+                  top: -30px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  background: white;
+                  padding: 0.25rem 0.5rem;
+                  border-radius: 4px;
+                  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                  font-size: 0.75rem;
+                "
+              ></div>
+							<div class="chart-bar-income" style="height: 120px;"></div>
+							<div class="chart-bar-expense" style="height: 80px;"></div>
+            </div>
+						<div class="chart-bar" style="height: 150px;"></div>
+						<div class="chart-bar" style="height: 90px;"></div>
+						<div class="chart-bar" style="height: 110px;"></div>
+						<div class="chart-bar" style="height: 130px;"></div>
+						<div class="chart-bar" style="height: 100px;"></div>
+						<div class="chart-bar" style="height: 85px;"></div>
+						<div class="chart-bar" style="height: 160px;"></div>
+						<div class="chart-bar" style="height: 95px;"></div>
+          </div>
+
+          <div class="chart-labels">
+						<span>Jan</span>
+						<span>Feb</span>
+						<span>Mar</span>
+						<span>Apr</span>
+						<span>May</span>
+						<span>Jun</span>
+						<span>Jul</span>
+						<span>Aug</span>
+						<span>Sep</span>
+						<span>Oct</span>
+						<span>Nov</span>
+						<span>Dec</span>
 					</div>
-				</div>
+        </div>
+      </div>
 
-				<div class="card">
-					<div class="card-header">
-						<h3 class="card-title">Monthly Expenses</h3>
-						<button class="card-menu">
-							<i class="fas fa-ellipsis-h"></i>
-						</button>
-					</div>
-					<div class="amount expense-amount">$1,895.00</div>
-					<div class="change">
-						<i class="fas fa-arrow-up"></i>
-						12% vs Last month
-					</div>
-				</div>
-
-				<div class="card my-card">
-					<div class="card-header">
-						<h3 class="card-title">My Card</h3>
-						<button class="card-menu"
-						style="color: rgba(255,255,255,0.8)">
-							<i class="fas fa-ellipsis-h"></i>
-						</button>
-					</div>
-					<div style="font-size: 0.75rem; opacity: 0.8; margin-bottom: 1rem;">
-						Linked to your primary wallet
-					</div>
-
-					<div class="card-chip"></div>
-					<div class="card-number">5435 2735 0037 0015</div>
-					<div class="card-holder">Pratham Gupta</div>
-
-					<div class="card-logo">
-						<div class="card-logo-circle logo-red"></div>
-						<div class="card-logo-circle logo-orange"></div>
-					</div>
-
-					<div class="spending-section">
-						<div style="margin-bottom: 0.5rem; font-size: 0.875rem; opacity: 0.9;">
-							Spending Limit
-						</div>
-						<div class="spending-limit">$4,645.00</div>
-						<div class="spending-used">used from $12,645.00</div>
-						<div class="progress-bar">
-							<div class="progress-fill"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="chart-section"></div>
-			
-			<div class="card transactions -section"></div>
-		</div>
-
-
-
-
-
-
+      <div class="card transactions -section"></div>
+    </div>
 
     <script src="script.js"></script>
   </body>
