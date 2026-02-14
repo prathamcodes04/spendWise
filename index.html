@@ -284,6 +284,55 @@
     </div>
 
     <!-- add income/expense buttons -->
+     <div class="add-buttons">
+      <button class="fab fab-income" title="Add Income">
+        <i class="fas fa-plus"></i>
+      </button>
+      <button class="fab fab-expense" title="Add Expense">
+        <i class="fas fa-minus"></i>
+      </button>
+     </div>
+    
+    <!-- income modal -->
+    <div id="incomeModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Add Income</h2>
+          <button class="close-btn">&times</button>
+        </div>
+        <div class="modal-body">
+          <form id="incomeForm">
+            <div class="form-group">
+              <label class="form-label">Amount</label>
+              <input type="number" class="form-input" id="incomeAmount" placeholder="Enter amount" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Category</label>
+              <select id="incomeCategory" class="form-select">
+                <option value="">Select Category</option>
+                <option value="salary">Salary</option>
+                <option value="freelance">Freelance</option>
+                <option value="business">Business</option>
+                <option value="investment">Investment</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Description</label>
+              <input type="text" class="form-input" id="incomeDescription" placeholder="Enter description">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Date</label>
+              <input type="date" class="form-input" id="incomeDate" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary">Cancel</button>
+          <button class="btn btn-primary">Add Income</button>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
