@@ -284,27 +284,33 @@
     </div>
 
     <!-- add income/expense buttons -->
-     <div class="add-buttons">
+    <div class="add-buttons">
       <button class="fab fab-income" title="Add Income">
         <i class="fas fa-plus"></i>
       </button>
       <button class="fab fab-expense" title="Add Expense">
         <i class="fas fa-minus"></i>
       </button>
-     </div>
-    
+    </div>
+
     <!-- income modal -->
     <div id="incomeModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
           <h2 class="modal-title">Add Income</h2>
-          <button class="close-btn">&times</button>
+          <button class="close-btn">&times;</button>
         </div>
         <div class="modal-body">
           <form id="incomeForm">
             <div class="form-group">
               <label class="form-label">Amount</label>
-              <input type="number" class="form-input" id="incomeAmount" placeholder="Enter amount" required>
+              <input
+                type="number"
+                class="form-input"
+                id="incomeAmount"
+                placeholder="Enter amount"
+                required
+              />
             </div>
             <div class="form-group">
               <label class="form-label">Category</label>
@@ -319,17 +325,85 @@
             </div>
             <div class="form-group">
               <label class="form-label">Description</label>
-              <input type="text" class="form-input" id="incomeDescription" placeholder="Enter description">
+              <input
+                type="text"
+                class="form-input"
+                id="incomeDescription"
+                placeholder="Enter description"
+              />
             </div>
             <div class="form-group">
               <label class="form-label">Date</label>
-              <input type="date" class="form-input" id="incomeDate" required>
+              <input type="date" class="form-input" id="incomeDate" required />
             </div>
           </form>
         </div>
         <div class="modal-footer">
           <button class="btn btn-secondary">Cancel</button>
           <button class="btn btn-primary">Add Income</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="add-buttons">
+      <button class="fab fab-income" title="Add Income">
+        <i class="fas fa-plus"></i>
+      </button>
+      <button class="fab fab-expense" title="Add Expense">
+        <i class="fas fa-minus"></i>
+      </button>
+    </div>
+
+    <!-- expense modal -->
+    <div id="expenseModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Add Expense</h2>
+          <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="expenseForm">
+            <div class="form-group">
+              <label class="form-label">Amount</label>
+              <input
+                type="number"
+                class="form-input"
+                id="expenseAmount"
+                placeholder="Enter amount"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Category</label>
+              <select id="expenseCategory" class="form-select">
+                <option value="">Select Category</option>
+                <option value="food">Food & Health</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="shopping">Shopping</option>
+                <option value="investment">Investment</option>
+                <option value="transport">Transport</option>
+                <option value="utilities">Utilities</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Description</label>
+              <input
+                type="text"
+                class="form-input"
+                id="expenseDescription"
+                placeholder="Enter description"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Date</label>
+              <input type="date" class="form-input" id="expenseDate" required />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary">Cancel</button>
+          <button class="btn btn-primary">Expense</button>
         </div>
       </div>
     </div>
